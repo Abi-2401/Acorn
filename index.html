@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acorn Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #00356b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #000000;
+            color: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+        }
+        .sidebar h3 {
+            font-size: 14px;
+            color: #ffffff;
+            margin-bottom: 5px;
+            background-color: #00356b;
+            padding: 5px;
+            text-align: center;
+            border-radius: 4px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 8px;
+            font-size: 12px;
+            color: #ffffff;
+        }
+        .sidebar ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .sidebar ul li a:hover {
+            text-decoration: underline;
+        }
+        .main-content {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .section {
+            background-color: white;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+        .section h2 {
+            font-size: 18px;
+            margin: 0 0 10px;
+        }
+        .timetable p, .finances p, .academics p {
+            margin: 5px 0;
+        }
+        .profile-checklist {
+            background-color: #e7f3e7;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        .finances {
+            color: #d9534f;
+        }
+        .button {
+            background-color: #00356b;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            text-align: center;
+            font-size: 14px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .button:hover {
+            background-color: #00509e;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Acorn</h1>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <h3>Academics</h3>
+            <ul>
+                <li>Enrol & Manage</li>
+                <li>Timetable & Exams</li>
+                <li>Planning Tools</li>
+                <li><a href="academic_history.html">Academic History</a></li>
+                <li>Graduation & Convocation</li>
+            </ul>
+            <h3>Finances</h3>
+            <ul>
+                <li>Financial Account</li>
+                <li>Make a Payment</li>
+                <li>Grants, Aid & Awards</li>
+                <li>Tuition Fee Deferral</li>
+                <li>Tax Forms</li>
+            </ul>
+            <h3>Life</h3>
+            <ul>
+                <li>Health & Wellness</li>
+                <li>Involvement</li>
+                <li>Jobs & Career Planning</li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="section">
+                <h2>Today's Timetable</h2>
+                <div class="timetable">
+                    <p>No activities for the duration of the day</p>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Profile Checklist</h2>
+                <div class="profile-checklist">
+                    <p>✔ You've completed your profile checklist. You can always <a href="#">visit the Profile page</a> to make updates.</p>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Academics</h2>
+                <div class="academics">
+                    <p>Degree Registration Status: <strong>Registered</strong></p>
+                    <p>Enrolled Courses: 2025 Winter</p>
+                    <ul>
+                        <li>MAT134H5 - Differential Integrals for Life Sciences</li>
+                        <li>BIO153H5 - Diversity of Organisms</li>
+                        <li>CHM120H5 - Chemical Principles II</li>
+                        <li>PHY100H5 - What's Physics Got to Do With It?</li>
+                        <li>FSL305 - Functional French High Intermediate I</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Finances</h2>
+                <div class="finances">
+                    <p>Outstanding Balance: <strong>$00.00</strong></p>
+                    <p>Financial Arrangement: <strong>Deferred payment (student loan/fin aid)</strong></p>
+                    <p><button class="button">Make a Payment</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
